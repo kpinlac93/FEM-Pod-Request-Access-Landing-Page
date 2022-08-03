@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 1em;
+    font-family: 'Chivo', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+}
+h1 {
+    color: #54E6AF;
+    font-size: 3.5em;
+    font-weight: 100;
+    line-height: 1.3em;
+    margin-bottom: 30px;
+}
+h1 span {
+    font-size: 1em;
+    color: white;
+}
+p {
+    color: rgba(255, 255, 255, 0.575);
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+}
+li {
+    list-style: none;
+}
+
+
+.page {
+    background-image: url("assets/desktop/image-host.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+.logo {
+    background-image: url("assets/desktop/logo.svg");
+    background-repeat: no-repeat;
+    width: 135px;
+    height: 56px;
+    position: fixed;
+    left: 150px;
+    top: 5vh;
+}
+.dots {
+    background-image: url("assets/desktop/bg-pattern-dots.svg");
+    width: 232px;
+    height: 104px;
+    position: fixed;
+    right: 0;
+    bottom: 70px;
+}
+
+
+
+.content {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 10vh;
+    padding-left: 150px;
+    background-color: black;
+    padding-top: 10px;
+    padding-right: 30px;
+    width: 50vw;
+    min-width: 30vw;
+}
+.content p {
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+
+
+.form {
+    background-color: rgba(255, 255, 255, 0.13);
+    width: 65%;
+    min-width: 400px;
+    height: 3.5em;
+    line-height: 3em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.email {
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    box-shadow: none;
+    border: none;
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+}
+.button {
+    border-radius: 50px;
+    background-color: #54E6AF;
+    margin: 2px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+
+
+.spon {
+    width: auto;
+}
+.spon img {
+    margin-right: 10px;
+}
+
+
+
+
+@media (max-width: 1000px) and (min-width:601px) {
+    h1 {
+        font-size: 2.6em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .page {
+        background-image: url("assets/tablet/image-host.jpg");
+        width: 100%;
+        height: 100vh;
+        background-position: top right;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+    }
+    .content {
+        padding-bottom: unset;
+        padding-left: unset;
+        background-color: black;
+        padding-top: 35px;
+        padding-right: 10px;
+        width: unset;
+        height: unset;
+        min-width: unset;  
+        position: relative;
+        margin-left: 50px;
+        margin-right: 10vw;
+        margin-bottom: 50px;
+    }
+    .logo {
+        position: relative;
+        height: 250px;
+    }
+    .dots {
+        position: fixed;
+        left: 20px;
+        bottom: 0px;
+    }
+    .spon {
+        position: relative;
+    }
+    .content h1 {
+        width: 95%;
+    }
+    .content p {
+        width: 70%;
+    }
+    .spon {
+        padding-bottom: 80px;
+    }
+}
+
+
+.mobbut {
+    position: fixed;
+    visibility: hidden;
+}
+@media (max-width: 600px) {
+    * {
+        letter-spacing: 0.05em;
+    }
+    .content form {
+        position: fixed;
+        visibility: hidden;
+    }
+    .dots {
+        position: fixed;
+        visibility: hidden;
+    }
+    .page {
+        background-image: unset;
+    }
+    .logo {
+        position: relative;
+        left: unset;
+        top: unset;
+        margin: auto;
+        margin-top: 90px;
+        margin-bottom: 75px;
+    }
+    .content {
+        text-align: center;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        min-width: none;
+        position: relative;
+    }
+    .spon {
+        width: auto;
+        opacity: 0.5;
+        margin-bottom: 100px;
+        padding: 0 10px 0;
+    }
+    .spon img {
+        margin: 0;
+        height: auto;
+        width: auto;
+    }
+    h1 {
+        margin: auto;
+        font-size: 2em;
+        margin-bottom: 30px;
+        width: 95%;
+    }
+    .content p {
+        margin: auto;
+        font-size: 0.95em;
+        width: 80%;
+        line-height: 2em;
+        margin-bottom: 30px;
+    }
+    .mobbut {
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+        position: relative;
+    }
+    .mobemail {
+        margin: 0 40px 0;
+        line-height: 3em;
+        border-radius: 50px;
+        padding-left: 35px;
+        background-color: rgba(255, 255, 255, 0.171);
+        color: white;
+        font-weight: bolder;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        margin-bottom: 20px;
+    }
+    .mobbutton {
+        margin: 0 40px 0;
+        line-height: 3em;
+        border-radius: 50px;
+        text-decoration: center;
+        background-color: #54E6AF;
+        font-weight: bolder;
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+}
